@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Toast.makeText(this, "Estamos en onPause", Toast.LENGTH_LONG).show();
-        Log.i("ciclo","Estamos en onResume");
+        Log.i("ciclo","Estamos en onPause");
     }
 
     @Override
