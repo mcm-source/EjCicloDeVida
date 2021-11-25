@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,5 +57,12 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(this, "Estamos en onDestroy", Toast.LENGTH_LONG).show();
         Log.i("ciclo","Estamos en onDestroy");
+    }
+
+    public void onClickBotonFin(View view) {
+
+        // obligar a que se destruya la activity
+        finish();
+
     }
 }
